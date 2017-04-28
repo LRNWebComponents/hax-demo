@@ -1,0 +1,34 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+`hax-demo`
+A LRN element
+
+@demo demo/index.html
+-->
+
+<dom-module id="hax-demo">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+    <h2>[[title]]</h2>
+  </template>
+
+  <script>
+    Polymer({
+
+      is: 'hax-demo',
+
+      properties: {
+        title: {
+          type: String,
+          value: 'hax-demo',
+        },
+      },
+
+    });
+  </script>
+</dom-module>
