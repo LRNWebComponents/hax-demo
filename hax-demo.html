@@ -1,4 +1,6 @@
 <link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../lrndesign-panelcard/lrndesign-panelcard.html">
+<link rel="import" href="../lrndesign-blockquote/lrndesign-blockquote.html">
 
 <!--
 `hax-demo`
@@ -14,7 +16,14 @@ A LRN element
         display: block;
       }
     </style>
-    <h2>[[title]]</h2>
+    <hax-ajax>
+      <lrndesign-panelcard title="a really cool thing">
+        THis is a whole bunch of content.
+      </lrndesign-panelcard>
+
+      <lrndesign-blockquote decorate citation="btopro" quote="This is a wuote by me... obviously">
+      </lrndesign-blockquote>
+    </hax-ajax>
   </template>
 
   <script>
@@ -23,10 +32,6 @@ A LRN element
       is: 'hax-demo',
 
       properties: {
-        title: {
-          type: String,
-          value: 'hax-demo',
-        },
       },
 
     });
